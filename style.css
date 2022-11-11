@@ -30,7 +30,7 @@
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover::after, .next:hover::after {
+.prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
