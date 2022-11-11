@@ -1,6 +1,6 @@
 let slideIndex = 1;
-
 slideShow(slideIndex);
+
 function nextSlides(move) {
     slideShow(slideIndex + move);
 }
@@ -10,9 +10,7 @@ function currentSlide(move) {
 }
 
 function slideShow(move) {
-    let slides, click;
-
-    slides = document.getElementsByClassName("img-slider");
+    let slides = document.getElementsByClassName("img-slider");
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -22,7 +20,8 @@ function slideShow(move) {
     if (move < 1) {
         slideIndex = slides.length;
     }
-    click = document.getElementsByClassName("click");
+
+    let click = document.getElementsByClassName("click");
     for (let i = 0; i < click.length; i++) {
         click[i].className = click[i].className.replace(" active", "");
     }
