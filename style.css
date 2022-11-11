@@ -10,7 +10,7 @@
   display: none;
 }
 
-.buttons:hover {
+.buttons {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -61,7 +61,7 @@
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.0s;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
