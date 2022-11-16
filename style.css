@@ -31,5 +31,72 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  d
+  display: block;
+  /* transition: 10s linear; */
 }
+
+.slide:hover img {
+  transform: scale(1.0);
+}
+
+.slide .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, 150%);
+  text-align: center;
+  background: rgba(194, 71, 0, 0.4);
+  padding: 50px;
+  color: whitesmoke;
+  border-radius: 100px;
+}
+
+.caption h2 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: teal;
+  color: whitesmoke;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.next:hover, .prev:hover {
+  background: rgb(209, 84, 0);
+}
+
+.next {
+  right: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+}
+
+.nav .click {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: 1px solid crimson;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  line-height: 20px;
+  margin: 0 10px;
+}
+
